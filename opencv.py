@@ -99,7 +99,7 @@ def classify_image():
                #text = text.decode('unicode_escape').encode('ascii','ignore')
                filename = os.path.splitext(f)[0]
                filename = ''.join(e for e in filename if e.isalnum() or e == '-')
-               text_file_path = 'C:/Users/vishnu.jayanand/Desktop/Opencv/test/testoutput/' + filename + '.txt'
+               text_file_path = 'C:/Users/' + filename + '.txt'
 
                text_file = open(text_file_path, "w+")
                text_file.write("%s" % text_orig)
